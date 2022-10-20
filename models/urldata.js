@@ -5,6 +5,10 @@ const urlSchema = new Schema({
     type: String, // 資料型別是字串
     required: true
   }
+  ,url: {
+    type: String, // 資料型別是字串
+    required: true
+  }
 })
 
 module.exports = mongoose.model('UrlData', urlSchema)

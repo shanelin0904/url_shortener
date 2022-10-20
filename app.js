@@ -4,6 +4,7 @@ const app = express()
 const PORT = 3000
 const { engine } = require('express-handlebars')
 const bodyParser = require('body-parser')
+require('./config/mongoose')
 // 引用路由器
 const routes = require('./routes')
 //樣板引擎
