@@ -1,4 +1,4 @@
-function urlRandomGenrator(){
+function randomUrlGenerator(){
   let text = ""
   let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 
@@ -8,5 +8,5 @@ function urlRandomGenrator(){
   return text
 }
 
-console.log(urlRandomGenrator())
-module.exports = urlRandomGenrator
+console.log(randomUrlGenerator())
+module.exports = randomUrlGenerator
