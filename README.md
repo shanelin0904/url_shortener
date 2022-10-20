@@ -12,29 +12,29 @@ Shorten your url to make it more simple
  * You can copy it or directly click the short url showing below
  
 ## Getting started
-1.Make sure to install node.js and npm
+ 1. Make sure to install node.js and npm
 
-2.Clone this code to your local repository
+ 2. Clone this code to your local repository
 
-3.Change direction to the file and enter the following code
+ 3. Change direction to the file and enter the following code
 ```
 npm install
 ```
-4.Then set MONGODB_URI as a environment variable for MongoBD connection
+ 4. Then set MONGODB_URI as a environment variable for MongoBD connection
 ```
 export MONGODB_URI="Your MongoDB connection URL"
 ```
-5.After that, enter the following code
+ 5. After that, enter the following code
 ```
 npm run start
 ```
-6.Finally, check whether the following message show up or not to make sure the server get started
+ 6. Finally, check whether the following message show up or not to make sure the server get started
 ```
 Express is listening on localhost:3000
 ```
-7.Open your brower and enter the link http://localhost:3000 to start exploring the website!
+ 7. Open your brower and enter the link http://localhost:3000 to start exploring the website!
 
-8.Press control + c to end the server
+ 8. Press control + c to end the server
 ## Development Tools
     
 * body-parser: 1.20.1
