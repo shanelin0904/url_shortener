@@ -1,7 +1,7 @@
 # **Url Shortener**
  
 ## Introduction
-Shorten your url to make it more simple
+Shorten your url to make it simpler
  
 ## Features
  
