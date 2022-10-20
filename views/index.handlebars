@@ -1,7 +1,9 @@
-<form action="/originalurl/:">
-  <div class="input-group input-group-sm mb-3">
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="shorten-button"
-      placeholder="Input URL here">
-  </div>
-  <button type="submit" class="btn btn-outline-primary" id="shorten-button">shorten</button>
-</form>
+<div class="form-group  w-25">
+  <form action="/" method="POST" class="d-flex flex-column align-items-center">
+    <div class="input-group input-group-sm mt-5 mb-3">
+      <input type="url" class="form-control" aria-label="Sizing example input" aria-describedby="shorten-button"
+        placeholder="Input URL here" name="url" required>
+    </div>
+    <button type="submit" class="btn btn-outline-dark mt-3"style="width: 150px" id="shorten-button">shorten</button>
+  </form>
+</div>
