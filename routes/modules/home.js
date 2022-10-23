@@ -5,16 +5,20 @@ const randomUrlGenerator = require('../../utilities/randomUrlGenerator')
 const UrlData = require('../../models/urldata')
 // 產生初始頁面
 
-router.get('/:urlcode', (req, res) => {
-  const {urlcode} = req.params
-  UrlData.find({ urlcode })
-    .then(urldata => res.redirect(urldata.url))
-    .catch(err => console.log(err))
-})
+
 
 router.get('/', (req, res) => {
   res.render('index')
 })
+
+router.get('/:urlcode', (req, res) => {
+  const { urlcode } = req.params
+  UrlData.find({ urlcode })
+    .then(urldata => res.redirect(urldata[0].url))
+    .catch(err => console.log(err))
+})
+
+
 router.post('/', (req, res) => {
   
   
@@ -30,6 +34,8 @@ router.post('/', (req, res) => {
     .then(() => res.render('result', { urlcode }))
     .catch(err => console.log(err))
 })
+
+
 
 
 
