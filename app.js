@@ -13,8 +13,9 @@ app.set('view engine', 'handlebars')
 
 
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(routes)
 app.use(express.static('public'))
+app.use(routes)
+
 // 啟動伺服器
 app.listen(PORT, () => {
   console.log(`Express is listening on localhost:${PORT}`)
